@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+/*
+ * Estilo "editorial-greeting" (taste-skill, semilla 1010497961).
+ * Fondo blanco, paneles tonales #f9f9f9, tinta casi negra, un único acento (verde azulado)
+ * reservado a los datos. Sin sombras en reposo, sin degradados.
+ */
+@theme {
+  --font-sans: "Instrument Sans", Inter, system-ui, sans-serif;
+  --font-serif: "Instrument Serif", Georgia, serif;
+
+  --color-ground: #ffffff;
+  --color-surface: #f9f9f9;
+  --color-raised: #ffffff;
+  --color-active: #ededed;
+  --color-line: #eaeaea;
+  --color-rule: #f3f3f3;
+  --color-control: #d9d9d6;
+  --color-ink: #1f201d;
+  --color-muted: #636361;
+  --color-accent: #1b6e66;
+  --color-accent-soft: #e4f0ee;
+  --color-positive: #2e7d32;
+  --color-negative: #b42318;
+  --color-warning: #92400e;
+  --color-warning-soft: #fffbeb;
+  --color-warning-line: #fde68a;
+  --color-negative-soft: #fdecea;
+  --color-negative-ink: #7a1d14;
+
+  --radius-card: 22px;
+  --radius-panel: 16px;
+}
+
+html {
+  background: var(--color-ground);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* Solo para lo que flota de verdad: el diálogo y el menú desplegable. */
+.flota {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); /* taste-skill-ignore: superposición real */
+}
+
+.num {
+  font-variant-numeric: tabular-nums;
+}
+
+::selection {
+  background: var(--color-accent-soft);
+  color: var(--color-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 2px;
+}
+
+@media print {
+  header,
+  footer,
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  section,
+  .print-avoid-break {
+    break-inside: avoid;
+  }
+}

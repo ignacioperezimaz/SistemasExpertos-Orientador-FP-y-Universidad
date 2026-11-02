@@ -1,0 +1,8 @@
+{
+  "name": "Orientador FP y Universidad",
+  "description": "Sistema experto para alumnado de 1.º y 2.º de Bachillerato del País Vasco para orientar entre FP de Grado Superior y grados universitarios en UPV/EHU, Deusto y Mondragon mediante razonamiento lógico Prolog.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
