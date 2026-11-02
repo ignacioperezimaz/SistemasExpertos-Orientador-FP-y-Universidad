@@ -2,8 +2,7 @@
 
 Sistema experto de orientación académica dirigido a estudiantes de **1.º y 2.º de Bachillerato de Euskadi**. Ayuda a explorar dos itinerarios después del Bachillerato: **FP de Grado Superior** (por familia profesional) y **universidad** (por rama de conocimiento).
 
-**Aplicación web:** https://orientador-fp-y-universidad.ai.studio/
-
+**Aplicación web:**https://orientador-fp-y-universidad-se.ai.studio
 ## ¿Qué hace la aplicación?
 
 1. Recoge información académica: curso, modalidad de Bachillerato, materias y preferencias formativas.
