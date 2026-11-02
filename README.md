@@ -4,8 +4,6 @@ Sistema experto de orientación académica dirigido a estudiantes de **1.º y 2.
 
 **Aplicación web:** https://orientador-fp-y-universidad.ai.studio/
 
-> **Aviso:** Las recomendaciones son orientativas. La aplicación no garantiza la admisión, no predice notas de corte y no sustituye la consulta de los requisitos oficiales ni la orientación académica profesional.
-
 ## ¿Qué hace la aplicación?
 
 1. Recoge información académica: curso, modalidad de Bachillerato, materias y preferencias formativas.
@@ -61,21 +59,6 @@ La relación entre dimensiones RIASEC y opciones educativas es una **decisión o
 
 **Flujo general:** datos del estudiante → cuestionario RIASEC → cálculo del perfil → motor de inferencia y reglas → recomendaciones y explicaciones.
 
-## Código y ejecución local
-
-Este repositorio debe contener **la misma versión del código que la aplicación publicada**.
-
-Para ejecutar el proyecto localmente, comprueba primero el archivo `package.json` y los scripts definidos en él. En una instalación habitual basada en Node.js y npm:
-
-```bash
-npm install
-npm run dev
-```
-
-Abre en el navegador la dirección local que indique la terminal. **Si el proyecto utiliza otros scripts o variables de entorno, consulta `package.json` y actualiza estas instrucciones antes de entregar.**
-
-**Seguridad:** no publiques claves API, contraseñas, archivos `.env` con valores reales ni datos personales. El PIN del modo experto es una separación básica de funciones, no un mecanismo de seguridad robusto.
-
 ## Pruebas realizadas
 
 La memoria del proyecto documenta pruebas de:
@@ -104,15 +87,3 @@ Se utilizaron, entre otras, las siguientes fuentes para el diseño y la comproba
 
 Los requisitos y las ponderaciones pueden cambiar entre cursos académicos. Antes de tomar una decisión real, deben consultarse las fuentes oficiales vigentes para el grado, ciclo y centro correspondiente.
 
-## Limitaciones y posibles mejoras
-
-- El cuestionario RIASEC es orientativo: sus ítems originales no constituyen una prueba psicométrica validada.
-- Las recomendaciones actuales se realizan por **familia profesional** o **rama universitaria**, no por titulación específica.
-- Las relaciones RIASEC–estudios simplifican una realidad académica y profesional más amplia.
-- No se calculan probabilidades de admisión ni se garantizan plazas.
-
-Entre las mejoras previstas están incorporar ciclos y grados concretos con enlaces oficiales, actualizar periódicamente las condiciones de acceso, realizar pruebas con estudiantes reales y ofrecer un espacio conversacional para dudas generales sin sustituir el motor de reglas.
-
-## Contexto académico
-
-Proyecto realizado para la unidad de **Sistemas Expertos** de la asignatura de **Modelos de Inteligencia Artificial**. La memoria del equipo recoge la planificación, las reglas, las pruebas, las decisiones de diseño y el uso de herramientas de IA.
